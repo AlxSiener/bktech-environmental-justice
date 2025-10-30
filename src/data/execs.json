@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Alex Rodriguez",
-    "role": "President",
-    "bio": "Passionate about climate justice and community organizing. Leading the charge to make Brooklyn Tech more sustainable.",
+    "name": "Cyrus Ginsberg",
+    "role": "Hub Leader",
+    "bio": "Dedicated to fighting climate change and environmental racism through youth organizing and community action.",
     "image": "/images/execs/64933f98a477f02e36a282d1_5eddd950e5cf1ec1fa5c2d83_virtual-influencer-john-pork.jpeg"
   },
   {
     "id": 2,
-    "name": "Samantha Chen",
-    "role": "Vice President",
-    "bio": "Environmental science enthusiast focused on urban ecology and green infrastructure in NYC communities.",
+    "name": "Marley Caron-Richman",
+    "role": "Hub Leader",
+    "bio": "Committed to building a sustainable future and advocating for environmental justice in our communities.",
     "image": "/images/execs/placeholder-2.svg"
   },
   {
     "id": 3,
-    "name": "Marcus Johnson",
-    "role": "Outreach Coordinator",
-    "bio": "Connecting with local organizations to amplify our impact and build coalitions for environmental justice.",
+    "name": "Poppy Lee-Slovin",
+    "role": "Hub Leader",
+    "bio": "Passionate about mobilizing youth to demand bold action on climate change and create systemic change.",
     "image": "/images/execs/placeholder-3.svg"
   },
   {
     "id": 4,
-    "name": "Priya Patel",
-    "role": "Events Coordinator",
-    "bio": "Organizing rallies, workshops, and community events to raise awareness about climate change and environmental racism.",
+    "name": "Alex Siener",
+    "role": "Hub Leader",
+    "bio": "Working to amplify the voices of young people in the fight for climate justice and environmental equity.",
     "image": "/images/execs/placeholder-4.svg"
   },
   {
     "id": 5,
-    "name": "Jordan Lee",
-    "role": "Communications Director",
-    "bio": "Managing social media and communications to spread our message and engage with the wider environmental justice movement.",
+    "name": "Kay Brahm-Robin",
+    "role": "Hub Leader",
+    "bio": "Organizing for a just transition to renewable energy and fighting for frontline communities.",
     "image": "/images/execs/placeholder-5.svg"
   },
   {
     "id": 6,
-    "name": "Maya Williams",
-    "role": "Secretary",
-    "bio": "Keeping the club organized and ensuring everyone stays informed about our initiatives and upcoming actions.",
+    "name": "Teyo Chait",
+    "role": "Hub Leader",
+    "bio": "Building power through grassroots organizing to create the political change we need to solve the climate crisis.",
     "image": "/images/execs/placeholder-6.svg"
   }
 ]
