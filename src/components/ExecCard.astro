@@ -1,0 +1,25 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+}
+
+const { name, role, bio, image } = Astro.props;
+---
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+  <div class="aspect-square overflow-hidden">
+    <img
+      src={image}
+      alt={`${name} - ${role}`}
+      class="w-full h-full object-cover"
+    />
+  </div>
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-900 mb-1">{name}</h3>
+    <p class="text-emerald-600 font-semibold mb-3">{role}</p>
+    <p class="text-gray-600 text-sm leading-relaxed">{bio}</p>
+  </div>
+</div>

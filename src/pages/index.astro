@@ -1,0 +1,131 @@
+---
+import '../styles/global.css';
+import ExecCard from '../components/ExecCard.astro';
+import ImageCarousel from '../components/ImageCarousel.astro';
+import execsData from '../data/execs.json';
+
+const carouselImages = [
+  { src: '/images/carousel/slide-1.svg', alt: 'Community Climate Action' },
+  { src: '/images/carousel/slide-2.svg', alt: 'Environmental Justice Rally' },
+  { src: '/images/carousel/slide-3.svg', alt: 'Sunrise Movement x Brooklyn Tech' },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Brooklyn Tech Environmental Justice X Sunrise club - Youth-led climate action and environmental justice organizing in Brooklyn." />
+    <title>Brooklyn Tech Environmental Justice X Sunrise</title>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white shadow-lg">
+      <div class="container mx-auto px-4 py-8 md:py-12">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            Brooklyn Tech Environmental Justice
+          </h1>
+          <p class="text-xl md:text-2xl font-light mb-2">X Sunrise Movement</p>
+          <p class="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
+            Student-led climate action fighting for environmental justice in our communities
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+      <!-- About Section -->
+      <section class="mb-16">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            We are Brooklyn Tech students committed to fighting climate change and environmental racism.
+            Through organizing, education, and direct action, we work to build a sustainable and just future
+            for all communities.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            In partnership with the Sunrise Movement, we mobilize young people to demand bold action on climate
+            change and create millions of good jobs in the process.
+          </p>
+        </div>
+      </section>
+
+      <!-- Image Carousel Section -->
+      <section class="mb-16">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+            Our Actions
+          </h2>
+          <ImageCarousel images={carouselImages} />
+        </div>
+      </section>
+
+      <!-- Executive Board Section -->
+      <section class="mb-16">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            Meet the Executive Board
+          </h2>
+          <p class="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+            Our dedicated team of student leaders working to create change at Brooklyn Tech and beyond
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {execsData.map((exec) => (
+              <ExecCard
+                name={exec.name}
+                role={exec.role}
+                bio={exec.bio}
+                image={exec.image}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="mb-16">
+        <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 rounded-2xl shadow-xl p-8 md:p-12 text-center text-white">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Involved</h2>
+          <p class="text-xl mb-8 max-w-2xl mx-auto">
+            Join us in the fight for climate justice. Every voice matters, and together we can create real change.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:contact@example.com"
+              class="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-block"
+            >
+              Contact Us
+            </a>
+            <a
+              href="https://www.sunrisemovement.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-800 transition-colors duration-200 inline-block"
+            >
+              Learn About Sunrise
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <p class="text-gray-400 mb-2">
+            Brooklyn Tech Environmental Justice X Sunrise Movement
+          </p>
+          <p class="text-gray-500 text-sm">
+            Building a future where everyone has access to clean air, water, and a livable planet
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

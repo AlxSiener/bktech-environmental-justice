@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Rodriguez",
+    "role": "President",
+    "bio": "Passionate about climate justice and community organizing. Leading the charge to make Brooklyn Tech more sustainable.",
+    "image": "/images/execs/placeholder-1.svg"
+  },
+  {
+    "id": 2,
+    "name": "Samantha Chen",
+    "role": "Vice President",
+    "bio": "Environmental science enthusiast focused on urban ecology and green infrastructure in NYC communities.",
+    "image": "/images/execs/placeholder-2.svg"
+  },
+  {
+    "id": 3,
+    "name": "Marcus Johnson",
+    "role": "Outreach Coordinator",
+    "bio": "Connecting with local organizations to amplify our impact and build coalitions for environmental justice.",
+    "image": "/images/execs/placeholder-3.svg"
+  },
+  {
+    "id": 4,
+    "name": "Priya Patel",
+    "role": "Events Coordinator",
+    "bio": "Organizing rallies, workshops, and community events to raise awareness about climate change and environmental racism.",
+    "image": "/images/execs/placeholder-4.svg"
+  },
+  {
+    "id": 5,
+    "name": "Jordan Lee",
+    "role": "Communications Director",
+    "bio": "Managing social media and communications to spread our message and engage with the wider environmental justice movement.",
+    "image": "/images/execs/placeholder-5.svg"
+  },
+  {
+    "id": 6,
+    "name": "Maya Williams",
+    "role": "Secretary",
+    "bio": "Keeping the club organized and ensuring everyone stays informed about our initiatives and upcoming actions.",
+    "image": "/images/execs/placeholder-6.svg"
+  }
+]
